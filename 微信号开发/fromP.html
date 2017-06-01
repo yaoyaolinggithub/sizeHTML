@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>授权查询系统-代理申请</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/m.css">
+	<link rel="stylesheet" type="text/css" href="css/ensemble.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap2">
+		<p class="fromC1">申请成为代理</p>
+		<p class="fromC2">填写申请资料</p>
+		<form class="fromTp" action="ajk.php"  name="addData" id="addData" onsubmit="return ChecKData();">
+			<div>
+				<p>姓名</p>
+				<input class="textIne" type="text" id="fomName" name="fomName"  maxlength="10" onfocus="if(value=='') {style.borderColor='#aaaaaa'}">
+			</div>
+			<div>
+				<p>性别</p>
+				<select name="fomPsex">
+					<option value="fomPman">男</option>
+					<option value="fomPwoman">女</option>
+				</select>
+			</div>
+			<div>
+				<p>微信号</p>
+				<input class="textIne" type="text" id="fomNum" name="fomNum"  maxlength="20" onfocus="if(value=='') {style.borderColor='#aaaaaa'}">
+			</div>
+			<div>
+				<p>身份证号码</p>
+				<input class="textIne" type="text" id="fomId" name="fomId"  maxlength="18" onfocus="if(value=='') {style.borderColor='#aaaaaa'}">
+			</div>
+			<div>
+				<p>手机号</p>
+				<input class="textIne" id="fomPhoto" type="text" name="fomPhoto"  maxlength="20" onfocus="if(value=='') {style.borderColor='#aaaaaa'}">
+			</div>
+			<div>
+				<p>代理级别</p>
+				<select class="fromSel" name="fomPrank">
+					<option value="选择级别">--选择级别--</option>
+					<option value="执行董事">执行董事</option>
+					<option value="品牌代理">品牌代理</option>
+					<option value="总代理">总代理</option>
+					<option value="三级代理">三级代理</option>
+					<option value="二级代理">二级代理</option>
+					<option value="一级代理">一级代理</option>
+				</select>
+			</div>
+			<div>
+				<p>验证码</p>
+				<input class="inpCode textIne" type="text" id="fomCode" name="fomCode"  maxlength="4" onfocus="if(value=='') {style.borderColor='#aaaaaa'}">
+				<img class="inpImg" src="images/fomcode-s1.png">
+			</div>
+			<div class="fromSbtd">
+				<input class="fromSbt" type="submit" name="submit" value="提交申请✔"  />
+			</div>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript">
+
+
+	function ChecKData (){
+		var fomName = $("#fomName");
+		if(""==fomName.val()){
+			alert("姓名不能为空");
+			fomName.css("borderColor","rgba(255, 0, 0, 0.5)");
+			return false;
+		}
+		var fomNum = $("#fomNum");
+		if(""==fomNum.val()){
+			alert("微信号不能为空");
+			fomNum.css("borderColor","rgba(255, 0, 0, 0.5)");
+			return false;
+		}
+		var fomId = $("#fomId");
+		if(""==fomId.val()){
+			alert("身份证号码不能为空");
+			fomId.css("borderColor","rgba(255, 0, 0, 0.5)");
+			return false;
+		}
+		var fomPhoto = $("#fomPhoto");
+		if(""==fomPhoto.val()){
+			alert("手机号码不能为空");
+			fomPhoto.css("borderColor","rgba(255, 0, 0, 0.5)");
+			return false;
+		}
+		var fomCode = $("#fomCode");
+		if(""==fomCode.val()){
+			alert("验证码不能为空");
+			fomCode.css("borderColor","rgba(255, 0, 0, 0.5)");
+			return false;
+		}
+		var fromSel = $(".fromSel").get(0);
+		fromSel.addEventListener('touchstart', function() {
+		    fromSel.style.borderColor = "#aaa";
+		});
+		if (addData.fomPrank.value == "选择级别"){
+	        fromSel.style.borderColor = "rgba(255, 0, 0, 0.5)";
+	        alert("请选择级别!");
+	        return false;
+	    }
+		
+	    return true;
+   	}
+
+   	
+</script>
+</html>

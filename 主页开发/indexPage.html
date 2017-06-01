@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>比客网商</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/m.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+		.overWrap{
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+		/*头部*/
+		header{
+			max-width: 1024px;
+			height: 45px;
+		    background: #f13030;
+		    z-index: 10;
+		    position: fixed;
+		    right: 0;
+		    left: 0;
+		    margin: 0 auto;
+		}
+		header .mui-title{
+			width: auto;
+			font-size: 1.2rem;
+		    color: white;
+		    line-height: 45px;
+		    overflow: hidden;
+		    text-align: center;
+    		white-space: nowrap;
+		    text-overflow: ellipsis;
+		    right: 40px;
+		    left: 40px;
+		    position: absolute;
+		    top: 0;
+    		bottom: 0;
+		    margin: auto;
+		}
+		header .mui-icon{
+		    width: 45px;
+		    height: 45px;
+		    position: relative;
+		}
+		header .mui-icon img{
+			width: 27px;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+		.mui-left{
+		    float: left;
+		}
+		.mui-right{
+		    float: right;
+		}
+		/*滚动图*/
+		.swiper-container {
+			padding-top: 45px;
+		}
+		.swiper-container .swiper-slide img{
+			width: 100%;
+			/*height: 200px;*/
+		}
+		.swiper-pagination-bullet-active{
+			background: white;
+		}
+		/*四方格*/
+		.table-view{
+			display: flex;
+  			justify-content: space-between;
+		}
+		.table-view-cell{
+			margin: 10px;
+		    width: 25%;
+		    display: inline-block;
+	        text-align: center;
+	        overflow: hidden;
+		}
+		.table-view-cell img{
+		    width: 100%;
+		}
+		.table-view-cell p{
+			margin: 5px 0px;
+			font-family: 'Helvetica Neue',Helvetica,sans-serif;
+		    font-size: 0.9rem;
+		    color: black;	
+		    overflow: hidden;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 1;
+		    -webkit-box-orient: vertical;	
+		}
+		/*产品列表*/
+		.productCont{
+			padding-top: 5px;
+			background: #f3f3f3;
+		}
+		.produ-Font{
+			height:40px;
+			background: url(images/produBg1.png) no-repeat center;
+			background-size:100% 100%;
+		}
+		.produ-Font .produ-tint{
+			color: #fd9426;
+		}
+		.produ-Font .produ-tint{
+			letter-spacing:8px;
+			line-height: 40px;
+			text-align: center;
+			font-weight:bolder;
+			color: #fd9426;
+			font-weight: bold;
+			font-family: helvetica;
+			text-align:center;
+			background: -moz-linear-gradient(left top, #fd608c, #fd9426);
+			background: -webkit-linear-gradient(left top, #fd608c, #fd9426);
+			background: -o-linear-gradient(left top, #fd608c, #fd9426);     /* 背景色渐变 */
+			-webkit-background-clip: text;         /* 规定背景的划分区域 */
+			-webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+		}
+		.productCont .produTop img{
+			width: 100%;
+			padding-bottom: 5px;
+		}
+		.produ-grid{
+    		vertical-align: baseline;
+       		box-sizing: border-box;
+		}
+		.produ-li{
+			width: 50%;
+			float: left;
+			box-sizing: border-box;
+    		padding-bottom: 5px;
+		}
+		.produ-li img{
+			width: 100%;
+		}
+		.produ-grid .produ-li:nth-child(2n+1) {
+		    padding-right: 2px;
+		}
+		.produ-grid .produ-li:nth-child(2n) {
+		    padding-left: 2px;
+		}
+		/*回到顶部样式*/
+		#mui-top {
+			width:35px; 
+			height:35px; 
+			border-radius: 50%;
+			position:fixed; 
+			right:20px; 
+			bottom:20px; 
+			display:none; 
+			background:url(images/top.png) no-repeat center;
+			background-size:100%; 
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="overWrap">
+		<!-- 头部 -->
+		<header>
+			<a href="#" class="mui-icon mui-left">
+		    	<img src="images/flg1.png"/>
+		    </a>
+		    <h1 class="mui-title">比客网商</h1>
+		    <a href="#" class="mui-icon mui-right">
+		    	<img src="images/flg2.png"/>
+		    </a>
+		</header>
+		<!-- 滚动图 -->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><a href="#"><img src="images/page1.jpg"></a></div>
+	            <div class="swiper-slide"><a href="#"><img src="images/page2.jpg"></a></div>
+	            <div class="swiper-slide"><a href="#"><img src="images/page3.jpg"></a></div>
+	            <div class="swiper-slide"><a href="#"><img src="images/page4.jpg"></a></div>
+	            <div class="swiper-slide"><a href="#"><img src="images/page5.jpg"></a></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <!-- <div class="swiper-button-next"></div> -->
+	        <!-- <div class="swiper-button-prev"></div> -->
+	    </div>
+	    <!-- 四方格 -->
+	    <ul class="table-view">
+		    <li class="table-view-cell ">
+		    	<a href="#">
+			        <img src="images/homeC1.png">
+			        <p class="mui-media-body">全部分类</p>
+		        </a>
+		    </li>
+		    <li class="table-view-cell ">
+		    	<a href="#">
+			        <img src="images/homeC2.png">
+			        <p class="mui-media-body">积分商城</p>
+		        </a>
+		    </li>
+		    <li class="table-view-cell ">
+		    	<a href="#">
+			        <img src="images/homeC3.png">
+			        <p class="mui-media-body">配货专区</p>
+		        </a>
+		    </li>
+		    <li class="table-view-cell ">
+		    	<a href="#">
+			        <img src="images/homeC4.png">
+			        <p class="mui-media-body">我要代理</p>
+		        </a>
+		    </li>
+		</ul>
+		<!-- 产品列表1 -->
+		<div class="productCont">
+			<div class="produ-Font"><p class="produ-tint">爆′款′系′列</p></div>
+			<ul class="produ-grid mcf">
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+			</ul>
+		</div>
+		<!-- 产品列表2 -->
+		<div class="productCont">
+			<div class="produ-Font"><p class="produ-tint">补′水′修′复′系′列</p></div>
+			<a href="#" class="produTop"><img src="images/product1.jpg"></a>
+			<ul class="produ-grid mcf">
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+			</ul>
+		</div>
+		<!-- 产品列表3 -->
+		<div class="productCont">
+			<div class="produ-Font"><p class="produ-tint">紧′致′精′华′系′列</p></div>
+			<a href="#" class="produTop"><img src="images/product2.jpg"></a>
+			<ul class="produ-grid mcf">
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi1.jpg"></a></li>
+				<li class="produ-li"><a href="#"><img src="images/produLi2.jpg"></a></li>
+			</ul>
+		</div>
+		<!-- 回到顶部按钮 -->
+		<a href="javascript:;" id="mui-top">
+	    </a>
+	</div>
+</body>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript">
+	// 滚动图函数
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true
+    });    
+    // 回到顶部按钮
+    var ndobtn = document.getElementById("mui-top");
+    var clientHeight = document.documentElement.clientHeight;
+    var timer = null;
+    var isTop = true;
+    window.onscroll = function(){
+    	var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+    	if(osTop >= clientHeight){
+    		ndobtn.style.display = "block";
+    	}else{
+    		ndobtn.style.display = "none";
+    	}
+    	if(!isTop){
+    		clearInterval(timer);
+    	}
+    	isTop = false;
+    }
+    ndobtn.onclick = function(){
+    	timer = setInterval(function(){
+    		var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+    		var speed = Math.floor(-osTop / 6);
+    		document.documentElement.scrollTop = document.body.scrollTop = osTop + speed;
+    		isTop = true;
+    		if(osTop == 0){
+    			clearInterval(timer);
+    		}
+    	},30);
+    }
+</script>
+</html>
