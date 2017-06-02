@@ -6,136 +6,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" type="images/x-icon" href="images/icon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/m.css">
-	<style type="text/css">
-		.overWrap{
-			max-width: 1024px;
-			margin: 0 auto;
-		}
-		/*头部*/
-		header{
-			max-width: 1024px;
-			height: 45px;
-		    background: #f13030;
-		    z-index: 10;
-		    position: fixed;
-		    right: 0;
-		    left: 0;
-		    margin: 0 auto;
-		}
-		header .mui-title{
-			width: auto;
-			font-size: 1.2rem;
-		    color: white;
-		    line-height: 45px;
-		    overflow: hidden;
-		    text-align: center;
-    		white-space: nowrap;
-		    text-overflow: ellipsis;
-		    right: 40px;
-		    left: 40px;
-		    position: absolute;
-		    top: 0;
-    		bottom: 0;
-		    margin: auto;
-		}
-		/*列表主体*/
-		.cla-cont{
-			max-width: 1024px;
-    		margin: auto;
-			position: absolute;
-		    top: 0;
-		    right: 0;
-		    bottom: 0;
-		    left: 0;
-		    margin-top: 45px;
-		}
-		/*列表左边*/
-		.cla-cont-left{
-			width: 25%;
-			height: 100%;
-			float: left;
-			overflow-y: auto;
-		}
-		.leftCont1 .mui-item{
-			height: 60px;
-			font-weight: bolder;
-			font-size: 0.9rem;
-			text-align: center;
-			line-height: 60px;
-			border-bottom: 1px solid gainsboro;
-		}
-		.mui-active{
-			border-left: 2px solid #DE3535;
-		    background: #f3f5f7;
-		    color: #dd524d;
-		}
-		/*列表右边*/
-		.cla-cont-right{
-			width: 75%;
-			height: 100%;
-			float: right;
-			overflow-y: auto;
-			background: #f3f5f7;
-		}
-		.rig-con1,.rig-mui1,.rig-mui2{
-			display: none;
-		}
-		.rig-con1>a>img{
-			width: 96%;
-    		margin: 2% 2% 0%;
-		}
-		.clas a img{
-			width: 47%;
-		    margin: 2%;
-		    float: left;
-		}
-		.clas a:nth-child(1) img{
-		    margin-right: 1%;
-		}
-		.clas a:nth-child(2) img{
-		    margin-left: 1%;
-		}
-		.rig-con1>ul{
-			margin:2%;
-		}
-		h3{
-			font-size: 1rem;
-			margin-bottom: 5px;
-		}
-		.rigli{
-			width: 100%;
-			display: inline-block;
-		}
-		.rig-x1{
-			display: flex;
-			flex-wrap: wrap;
-			align-content: space-between;
-		}
-		.rig-x1 .rigl1{
-			width: 30%;
-		    font-size: 0.9rem;
-		    text-align: center;
-		    background: white;
-		    margin: 0px 3.6% 10px 0px;
-		    border: 1px solid #e5e5e5;
-		    line-height: 2.3;
-		    overflow: hidden;
-		    display: -webkit-box;
-		    text-overflow: ellipsis;
-		    -webkit-box-orient: vertical;
-		    -webkit-line-clamp: 1;
-		}
-		.rigl1 a{
-			color: #666;
-		}
-		.rig-x1 .rigl1:nth-child(3n) {
-		    margin-right: 0px;
-		}
-		.rigBlock{
-			display: block;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/page.css">
 </head>
 <body>
 	<div class="overWrap">
@@ -175,6 +48,7 @@
 						<a href="#" class="cla-prod1"><img src="images/produLi1.jpg"></a>
 						<a href="#" class="cla-prod2"><img src="images/produLi2.jpg"></a>
 					</div>
+					<!-- 时装 -->
 					<ul class="rig-mui1 rigBlock">
 						<li class="rigli">
 							<h3 class="mfto">时装</h3>
@@ -214,6 +88,7 @@
 							</ul>
 						</li>
 					</ul>
+					<!-- 数码 -->
 					<ul class="rig-mui2">
 						<li class="rigli">
 							<h3 class="mfto">数码</h3>

@@ -1,0 +1,43 @@
+.contain{
+    width: auto;
+    padding:15px;
+    margin-bottom: 30px;
+}
+.title{
+     color: #000000;
+     font-size: 20px;
+     font-weight: bold;
+ }
+.header{
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 5px;
+}
+.dynamic_sentence{
+    color: #000;
+    margin-top: 5px;
+}
+.dynamic_sentence span{
+    color: #999;
+    font-weight: normal;
+}
+
+.content{
+    padding: 0 10px;
+}
+dl dt{
+    color: #000;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+dl dd{
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+
+}
+dl dd>img{
+    width: 100%;
+}

@@ -1,0 +1,249 @@
+.overWrap{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/*头部*/
+header{
+	max-width: 1024px;
+	height: 45px;
+    background: #f13030;
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+header .mui-title{
+	width: auto;
+	font-size: 1.2rem;
+    color: white;
+    line-height: 45px;
+    overflow: hidden;
+    text-align: center;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    right: 40px;
+    left: 40px;
+    position: absolute;
+    top: 0;
+	bottom: 0;
+    margin: auto;
+}
+header .mui-icon{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+header .mui-icon img{
+	width: 27px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*indexPage.html*/
+.mui-left{
+    float: left;
+}
+.mui-right{
+    float: right;
+}
+/*滚动图*/
+.swiper-container {
+	padding-top: 45px;
+}
+.swiper-container .swiper-slide img{
+	width: 100%;
+	/*height: 200px;*/
+}
+.swiper-pagination-bullet-active{
+	background: white;
+}
+/*四方格*/
+.table-view{
+	display: flex;
+	justify-content: space-between;
+}
+.table-view-cell{
+	margin: 10px;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+.table-view-cell img{
+    width: 100%;
+}
+.table-view-cell p{
+	margin: 5px 0px;
+	font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 0.9rem;
+    color: black;	
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;	
+}
+/*产品列表*/
+.productCont{
+	padding-top: 5px;
+	background: #f3f3f3;
+}
+.produ-Font{
+	height:40px;
+	background: url(../images/produBg1.png) no-repeat center;
+	background-size:100% 100%;
+}
+.produ-Font .produ-tint{
+	color: #fd9426;
+}
+.produ-Font .produ-tint{
+	letter-spacing:6px;
+	line-height: 40px;
+	text-align: center;
+	font-weight:bolder;
+	color: #fd9426;
+	font-weight: bold;
+	font-family: helvetica;
+	text-align:center;
+	background: -moz-linear-gradient(left top, #fd608c, #fd9426);
+	background: -webkit-linear-gradient(left top, #fd608c, #fd9426);
+	background: -o-linear-gradient(left top, #fd608c, #fd9426);     /* 背景色渐变 */
+	-webkit-background-clip: text;         /* 规定背景的划分区域 */
+	-webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+}
+.productCont .produTop img{
+	width: 100%;
+	padding-bottom: 5px;
+}
+.produ-grid{
+	vertical-align: baseline;
+		box-sizing: border-box;
+}
+.produ-li{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-bottom: 5px;
+}
+.produ-li img{
+	width: 100%;
+}
+.produ-grid .produ-li:nth-child(2n+1) {
+    padding-right: 2px;
+}
+.produ-grid .produ-li:nth-child(2n) {
+    padding-left: 2px;
+}
+/*回到顶部样式*/
+#mui-top {
+	width:35px; 
+	height:35px; 
+	border-radius: 50%;
+	position:fixed; 
+	right:20px; 
+	bottom:20px; 
+	display:none; 
+	background:url(../images/top.png) no-repeat center;
+	background-size:100%; 
+}
+/*classifyPage.html*/
+/*列表主体*/
+.cla-cont{
+	max-width: 1024px;
+	margin: auto;
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 45px;
+}
+/*列表左边*/
+.cla-cont-left{
+	width: 25%;
+	height: 100%;
+	float: left;
+	overflow-y: auto;
+}
+.mui-item{
+	height: 60px;
+	font-weight: bolder;
+	font-size: 0.9rem;
+	text-align: center;
+	line-height: 60px;
+	border-bottom: 1px solid gainsboro;
+}
+.mui-active{
+	border-left: 2px solid #DE3535;
+    background: #f3f5f7;
+    color: #dd524d;
+}
+/*列表右边*/
+.cla-cont-right{
+	width: 75%;
+	height: 100%;
+	float: right;
+	overflow-y: auto;
+	background: #f3f5f7;
+}
+.rig-con1,.rig-mui1,.rig-mui2{
+	display: none;
+}
+.rig-con1>a>img{
+	width: 96%;
+	margin: 2% 2% 0%;
+}
+.clas a img{
+	width: 47%;
+    margin: 2%;
+    float: left;
+}
+.clas a:nth-child(1) img{
+    margin-right: 1%;
+}
+.clas a:nth-child(2) img{
+    margin-left: 1%;
+}
+.rig-con1>ul{
+	margin:2%;
+}
+h3{
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+.rigli{
+	width: 100%;
+	display: inline-block;
+}
+.rig-x1{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.rig-x1 .rigl1{
+	width: 30%;
+    font-size: 0.9rem;
+    text-align: center;
+    background: white;
+    margin: 0px 3.6% 10px 0px;
+    border: 1px solid #e5e5e5;
+    line-height: 2.3;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.rigl1 a{
+	color: #666;
+}
+.rig-x1 .rigl1:nth-child(3n) {
+    margin-right: 0px;
+}
+.rigBlock{
+	display: block;
+}
+		
