@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>授权查询系统</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" type="images/x-icon" href="images/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/m.css">
+	<link rel="stylesheet" type="text/css" href="css/ensemble.css">
+</head>
+<body>
+	<div class="wrap1">
+		<div class="accred1">
+			<img src="images/ods_logo.jpg" style="width: 160px;">
+			<p class="accred1_p">代理授权查询系统</p>
+		</div>
+		<form class="accredForm" action="ajk.php" method="post" name="addForm"  onsubmit="return CheckPost();">
+		    <div >
+		    	<input class="accredIpt1" type="text" size="20" name="tel" maxlength="20" placeholder="请输入手机号码查询" onfocus="if(placeholder=='请输入手机号码') {placeholder=''}" onblur="if (placeholder=='') {placeholder='请输入手机号码查询'}" />
+		    </div>
+		    <div >
+		        <input class="accredIpt2" type="submit" name="submit" value="立刻查询" />
+		    </div>
+		</form>
+		<div class="acced2">
+			<a href="#"><span class="accred_d1">代理申请</span></a>
+			<a href="#"><div class="accred_d2">返回官网</div></a>
+			<p class="accred_p1">copyright@广州新天地网络科技有限公司</p>
+			<p class="accred_p2">技术支持：新天地网络</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+   	var accredIpt1 = document.querySelector(".accredIpt1");
+	function CheckPost(){
+	    if (accredIpt1.value == ""){
+	        accredIpt1.focus();
+	        alert("请填写所需要查询的手机号码!");
+	        return false;
+	    }
+	    return true;
+   	}
+   
+	
+</script>
+</html>

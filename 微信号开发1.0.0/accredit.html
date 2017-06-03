@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>授权查询系统</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" type="images/x-icon" href="images/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/m.css">
+	<link rel="stylesheet" type="text/css" href="css/ensemble.css">
+</head>
+<body>
+	<div class="wrap1">
+		<div class="accred1">
+			<img src="images/ods_logo.jpg" style="width: 160px;">
+			<p class="accred1_p">代理授权查询系统</p>
+		</div>
+		<form class="accredForm" action="ajk.php" method="post" name="addForm"  onsubmit="return CheckPost();">
+			<span>
+				微信<input class="inpts" type="radio" name="numbers" value="WeChat" checked="checked"> 
+			</span>
+			<span>
+				授权号<input class="inpts" type="radio" name="numbers" value="accredit" >
+			</span>
+  			<span>
+  			 	手机号<input class="inpts" type="radio" name="numbers" value="phone" >
+  			</span>
+  			
+		    <div >
+		    	<input class="accredIpt1" type="text" size="20" name="WeChat" maxlength="20" placeholder="请输入查询号码" onfocus="if(placeholder=='请输入查询号码'||'请输入微信号码'||'请输入授权号码'||'请输入手机号码') {placeholder=''}" onblur="if (placeholder=='') {placeholder='请输入查询号码'}" />
+		    </div>
+		    <div >
+		        <input class="accredIpt2" type="submit" name="submit" value="立刻查询" />
+		    </div>
+		</form>
+		<div class="acced2">
+			<span class="accred_d1">代理申请</span>
+			<div class="accred_d2">返回官网</div>
+			<p class="accred_p1">copyright@广州新天地网络科技有限公司</p>
+			<p class="accred_p2">技术支持：新天地网络</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var inpts = document.querySelectorAll(".inpts");
+   	var accredIpt1 = document.querySelector(".accredIpt1");
+	for (var i = 0; i < inpts.length; i++) {
+		inpts[i].onclick = function(){
+			if(this.value == "WeChat"){
+				accredIpt1.placeholder = '请输入微信号码';
+				accredIpt1.name = 'WeChat';
+			}
+			if(this.value == "accredit"){
+				accredIpt1.placeholder = '请输入授权号码';
+				accredIpt1.name = 'accredit';
+			}
+			if(this.value == "phone"){
+				accredIpt1.placeholder = '请输入手机号码';
+				accredIpt1.name = 'phone';
+			}
+		}
+	}
+	function CheckPost(){
+	    if (accredIpt1.value == ""){
+	        accredIpt1.focus();
+	        alert("请填写所需要查询的号码!");
+	        return false;
+	    }
+	    return true;
+   	}
+   
+	
+</script>
+</html>

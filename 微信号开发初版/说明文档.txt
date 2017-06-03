@@ -1,0 +1,5 @@
+index.html   主页
+operation.html  运营政策
+brand.html  品牌介绍
+accredit.html  授权查询系统
+fromP.html 代理申请
